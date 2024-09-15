@@ -399,7 +399,8 @@ body {
 .works {
     padding: 80px 0;
 }
-.works h5{
+
+.works h5 {
     color: #303030;
     line-height: 8px;
     font-weight: 500;
@@ -409,19 +410,87 @@ body {
     word-spacing: 5px;
     font-family: "segoe ui", Arial, sans-serif;
 }
-.works .card:not(:last-child){
+
+.works .card:not(:last-child) {
     margin-bottom: 30px;
 }
+
 @media screen and (max-width: 992px) {
-    .works h5{
+    .works h5 {
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .works h5{
+    .works h5 {
         font-size: 24px;
     }
-    
+
 }
+
 /* end works */
+
+/* start footer */
+
+.second-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background: #151515;
+    padding: 30px 70px;
+}
+
+.second-footer .footer-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #151515;
+}
+
+.second-footer .footer-icons i {
+    margin-left: 20px;
+    width: 36px;
+    height: 36px;
+    background-color: #121212;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-footer .footer-text p{
+    margin: 0;
+}
+
+.second-footer .footer-icons i:hover {
+    transition: 0.3s;
+    background-color: #218fe6;
+    color: white;
+}
+
+
+@media screen and (max-width: 750px) {
+    .second-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .second-footer .footer-icons {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .second-footer .footer-icons i {
+        margin: 10px;
+    }
+}
