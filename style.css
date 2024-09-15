@@ -1,3 +1,15 @@
+body {
+    background: #fff;
+    font-size: 15px;
+    line-height: 1.86em;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Open Sans', arial;
+    font-weight: 400;
+    color: #686868;
+    box-shadow: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /* start header */
 .first-header li {
     border-right: 1px solid #e1e1e1;
@@ -54,15 +66,6 @@
     .header .active {
         border-top: 3px solid #ffc400;
     }
-
-    /* .header nav:nth-child(2) {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 999;
-        background-color: white;
-    } */
 
 }
 
@@ -157,7 +160,6 @@
 @media screen and (max-width: 800px) {
     .slider .carousel-caption .slider-caption {
         margin-left: 0;
-        /* display: none; */
         left: 15%;
         position: absolute;
 
@@ -165,14 +167,71 @@
 
     .overly-dark h1 {
         font-size: 40px;
-    }   
+    }
 
     .overly-dark p {
         width: 70%;
         font-size: 15px;
-        
+
     }
 
 }
 
 /* end slider */
+
+/* start services */
+.services .icon {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    background-color: #ffc400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.services i {
+    cursor: pointer;
+    line-height: 50px;
+    color: white;
+    font-size: 25px;
+
+}
+
+.services h5 {
+    margin-bottom: 11px;
+    font-size: 17px;
+    color: #303030;
+    line-height: 1.38em;
+    font-weight: 500;
+    font-family: "segoe ui", Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+.services p {
+    font-size: 14px;
+    color: #888;
+    margin: 0;
+
+}
+
+.services .card {
+    width: 14rem;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 1016px) {
+    .services .card {
+        width: 11rem;
+    }
+
+}
+
+@media screen and (max-width: 888px) {
+    .services .card {
+        width: 17rem;
+    }
+}
+
+/* end services */
