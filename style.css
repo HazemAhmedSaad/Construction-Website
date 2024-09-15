@@ -313,10 +313,10 @@ body {
     box-shadow: none;
 }
 
-.about button span{
+.about button span {
     transition: transform 0.3s, opacity 1.3s;
     transform: translateX(10px);
-    display:inline-block;
+    display: inline-block;
 }
 
 .about button i {
@@ -343,3 +343,85 @@ body {
     transition: transform 0.3s, opacity 2.3s;
     transform: translateX(0);
 }
+
+/* end about */
+
+/* start features */
+.features {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.features h5 {
+    color: #303030;
+    line-height: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+    font-family: "segoe ui", Arial, sans-serif;
+}
+
+.features i {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.features .row div {
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title h2 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.38em;
+    color: #303030;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.title p {
+    line-height: 1.86em;
+    color: #606060;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* end features */
+
+/* start works */
+.works {
+    padding: 80px 0;
+}
+.works h5{
+    color: #303030;
+    line-height: 8px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    word-spacing: 5px;
+    font-family: "segoe ui", Arial, sans-serif;
+}
+.works .card:not(:last-child){
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 992px) {
+    .works h5{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .works h5{
+        font-size: 24px;
+    }
+    
+}
+/* end works */
